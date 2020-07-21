@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon"  type="image/x-icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/styles.css" />
+		<meta charset="utf-8" />
+		<title>Color A的指引站</title>
+		<style>
+		body
+			{
+				background-image: url(./img/img.jpg) ;
+				font-size: unset;
+			}
+		/* Tooltip 容器 */
+		.tooltip {
+		    position: relative;
+		    display: unset;
+		    border-bottom: 1px dotted black; /* 悬停元素上显示点线 */
+		}
+		 
+		/* Tooltip 文本 */
+		.tooltip .tooltiptext {
+		    visibility: hidden;
+		    width: 150px;
+		    background-color: darkgray;
+		    color: #45ffa8;
+		    text-align: center;
+			border-radius: 6px;
+		    padding: 5px 0;
+			bottom: 100%;
+			left: 50%;
+			margin-left: -60px;
+		    border-radius: 6px;
+		 
+		    /* 定位 */
+		    position: absolute;
+		    z-index: 1;
+			/*淡入-0%~100%*/
+			opacity: 0;
+			transition: opacity 1s;
+		}
+		 
+		/* 鼠标移动上去后显示提示框 */
+		.tooltip:hover .tooltiptext {
+		    visibility: visible;
+			opacity: 1;
+		}
+		</style>
+	</head>
+	<body style="text-align: center;">
+		<h1>
+			<p align="center">
+				<font color="aqua" face="bodoni mt" size="7">
+					Welcome!
+				</font>
+	        </p>
+		</h1>
+		<p align="center">
+			<font color="aqua" face="楷体" size="5">
+				我们提供一些供新人使用的技术网站
+			</font>
+		</p>
+		<p align="center">
+			<a href="https://www.runoob.com" target="_blank">
+				<font color="white" size="5" face="楷体">
+					<div class="tooltip">菜鸟教程</font></a><br/>
+					<span class="tooltiptext">提供html,js,css.提供在线测试工具</span>
+					</div>
+			<a href="https://www.w3school.com.cn/" target="_blank">
+				<font color="white" size="5" face="楷体">
+					<div class="tooltip">w3school</font></a>
+					<span class="tooltiptext">提供SQL,PHP,JAVA,C++ 等</span>
+					</div>
+			<!--此处上面待添加-->
+		</p>
+	</body>
+</html>
