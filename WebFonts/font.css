@@ -117,4 +117,10 @@
     font-style: normal;
     font-display: swap;
 }
-
+@font-face {
+    font-family: 'Chinese';
+    src: local('Chinese'),
+        url('Chinese.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
